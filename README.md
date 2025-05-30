@@ -5,27 +5,40 @@ A Chrome extension that provides keyboard shortcuts for navigating Farcaster (ht
 ## Features
 
 ### Sidebar Navigation
-- `⌘H` - Home
-- `⌘N` - Notifications
-- `⌘D` - Direct Casts
-- `⌘E` - Explore
-- `⌘I` - Invites
-- `⌘B` - Bookmarks
-- `⌘S` - Starter Packs
-- `⌘M` - Mini Apps
-- `⌘W` - Warps
-- `⌘V` - Developers
-- `⌘P` - Profile
+- `H` - Home
+- `O` - Notifications
+- `D` - Direct Casts
+- `E` - Explore
+- `I` - Invites
+- `B` - Bookmarks
+- `T` - Starter Packs
+- `M` - Mini Apps
+- `W` - Warps
+- `V` - Developers
+- `P` - Profile
 
 ### Main Navigation
-- `⌘C` - New Cast
+- `N` - New Cast
+- `S` - Settings
 
 ## Installation
 
+1. Download the latest release from the [Releases page](https://github.com/codestin/FARKEYS/releases)
+
+2. Load the extension in Chrome:
+   - Open Chrome and go to `chrome://extensions/`
+   - Enable "Developer mode" in the top right
+   - Click "Load unpacked"
+   - Select the downloaded folder
+
+## Development
+
+For developers who want to modify the extension:
+
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/farcaster-shortkeys.git
-cd farcaster-shortkeys
+git clone https://github.com/codestin/FARKEYS.git
+cd FARKEYS
 ```
 
 2. Install dependencies:
@@ -43,8 +56,6 @@ npm run build
    - Enable "Developer mode" in the top right
    - Click "Load unpacked"
    - Select the `dist` folder from the build output
-
-## Development
 
 To start development with hot reloading:
 ```bash
