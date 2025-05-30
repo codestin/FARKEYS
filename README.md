@@ -21,6 +21,10 @@ A Chrome extension that provides keyboard shortcuts for navigating Farcaster (ht
 - `N` - New Cast
 - `S` - Settings
 
+## Inspiration
+
+[Herocast](https://www.herocast.xyz/) by [@hellno](https://warpcast.com/hellno) was the first to build a client with keyboard shortcuts! I was inspired by this experience.
+
 ## Installation
 
 1. Download the latest release from the [Releases page](https://github.com/codestin/FARKEYS/releases)
