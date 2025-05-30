@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "farkeys",
+  "version": "1.0.0",
+  "description": "Keyboard shortcuts for Farcaster (farkeys)",
+  "default_locale": "en",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://farcaster.xyz/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon_16.png",
+      "48": "images/icon_48.png",
+      "128": "images/icon_128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon_16.png",
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://farcaster.xyz/*"],
+      "js": ["mousetrap.min.js", "content.js"]
+    }
+  ]
+} 

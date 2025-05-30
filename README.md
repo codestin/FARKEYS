@@ -1,40 +1,66 @@
-# Shortkeys
+# Farcaster Shortkeys
 
-Custom keyboard shortcuts for your browser
+A Chrome extension that provides keyboard shortcuts for navigating Farcaster (https://farcaster.xyz/).
 
-[Donate](https://salt.bountysource.com/teams/chrome-shortkeys) | 
-[Add a Review](https://chrome.google.com/webstore/detail/shortkeys-custom-keyboard/logpjaacgmcbpdkdchjiaagddngobkck/reviews) | 
-[Documentation](https://github.com/mikecrittenden/shortkeys/wiki/How-To-Use-Shortkeys) | 
-[Support](https://github.com/mikecrittenden/shortkeys/issues) | 
-[Firefox Add-on](https://addons.mozilla.org/firefox/addon/shortkeys/) |
-[Chrome Webstore](https://chrome.google.com/webstore/detail/shortkeys-custom-keyboard/logpjaacgmcbpdkdchjiaagddngobkck)
+## Features
 
-## Install
+### Sidebar Navigation
+- `⌘H` - Home
+- `⌘N` - Notifications
+- `⌘D` - Direct Casts
+- `⌘E` - Explore
+- `⌘I` - Invites
+- `⌘B` - Bookmarks
+- `⌘S` - Starter Packs
+- `⌘M` - Mini Apps
+- `⌘W` - Warps
+- `⌘V` - Developers
+- `⌘P` - Profile
 
-	$ npm install
+### Main Navigation
+- `⌘C` - New Cast
+
+## Installation
+
+1. Clone this repository:
+```bash
+git clone https://github.com/yourusername/farcaster-shortkeys.git
+cd farcaster-shortkeys
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Build the extension:
+```bash
+npm run build
+```
+
+4. Load the extension in Chrome:
+   - Open Chrome and go to `chrome://extensions/`
+   - Enable "Developer mode" in the top right
+   - Click "Load unpacked"
+   - Select the `dist` folder from the build output
 
 ## Development
 
-    npm run dev chrome
-    npm run dev firefox
-    npm run dev opera
-    npm run dev edge
+To start development with hot reloading:
+```bash
+npm run dev
+```
 
-## Build
+## Usage
 
-    npm run build chrome
-    npm run build firefox
-    npm run build opera
-    npm run build edge
+1. Visit https://farcaster.xyz/
+2. Use the keyboard shortcuts to navigate the site
+3. Click the extension icon to see all available shortcuts
 
-## Environment
+## Contributing
 
-The build tool also defines a variable named `process.env.NODE_ENV` in your scripts. 
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Docs
+## License
 
-* [webextension-toolbox](https://github.com/HaNdTriX/webextension-toolbox)
-
-## Credits
-
-* Icon made by [Freepik](https://www.flaticon.com/authors/freepik "Freepik") from [www.flaticon.com](https://www.flaticon.com/ "Flaticon").
+MIT License - see LICENSE.md for details
