@@ -68,9 +68,25 @@ npm run dev
 2. Use the keyboard shortcuts to navigate the site
 3. Click the extension icon to see all available shortcuts
 
+## Known Issues
+
+- When on the Direct Casts page, keyboard shortcuts won't work because the text input box owns the focus. You'll need to click outside the text box first to use the shortcuts.
+
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions welcome! Feel free to submit PRs for:
+- Fixing the focus issue on Direct Casts page
+- Adding more keyboard shortcuts
+- Improving the popup UI
+- Adding support for other browsers
+
+```bash
+# Setup
+git clone https://github.com/codestin/FARKEYS.git
+cd FARKEYS
+npm install
+npm run dev
+```
 
 ## License
 
