@@ -70,7 +70,7 @@ npm run dev
 
 ## Known Issues
 
-- When on the Direct Casts page, keyboard shortcuts won't work because the text input box owns the focus. You'll need to click outside the text box first to use the shortcuts.
+- When on the Direct Casts page, keyboard shortcuts won't work because the text input box owns the focus. Please submit a pull request if you know of a way to fix this!
 
 ## Contributing
 
