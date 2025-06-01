@@ -89,6 +89,9 @@ function getProfileUrl() {
   return null;
 }
 
+// State tracking for warplet
+let warpletOpen = false;
+
 // Initialize keyboard shortcuts
 function initializeShortcuts() {
   Mousetrap.bind('h', () => navigateTo('Home', '/'));
@@ -103,6 +106,21 @@ function initializeShortcuts() {
   Mousetrap.bind('w', () => navigateTo('Warps', '/~/warps'));
   Mousetrap.bind('v', () => navigateTo('Developers', '/~/developers'));
   Mousetrap.bind('p', () => navigateTo('Profile'));
+  Mousetrap.bind('x', () => {
+    const warplet = document.querySelector("#warplet");
+    if (warplet) {
+      warplet.click();
+      if (!warpletOpen) {
+        showFeedback('Warplet opened');
+        warpletOpen = true;
+      } else {
+        showFeedback('Warplet closed');
+        warpletOpen = false;
+      }
+    } else {
+      showFeedback('Warplet not found');
+    }
+  });
 }
 
 // Initialize when the page is fully loaded
@@ -110,4 +128,4 @@ if (document.readyState === 'complete') {
   initializeShortcuts();
 } else {
   window.addEventListener('load', initializeShortcuts);
-} 
+}
